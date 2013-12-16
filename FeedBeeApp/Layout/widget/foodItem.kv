@@ -1,0 +1,25 @@
+<FoodItem>:
+  orientation: "horizontal"
+  padding: 5
+  spacing: 5
+  Label:
+    text: root.name 
+    font_size: "12sp"
+  Label:
+    text: str(root.votes)
+    font_size: "20sp"
+  BoxLayout:
+    orientation: "horizontal"
+    Button:
+      id: "vote_up"
+      text: "up"
+      font_size: "12sp"
+      width: 20
+      on_press: root.up_pressed()
+  BoxLayout:
+    orientation: "horizontal"          
+    Button: 
+      id: "vote_down"
+      text: "down"
+      width: 20
+      font_size: "12sp"
