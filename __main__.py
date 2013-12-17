@@ -25,7 +25,7 @@ class feedBeeKivy(App):
       Config.set('kivy','log_level','info')
       Config.set('graphics','width',"200")
       Config.set('graphics','height',"300")
-      Config.set('graphics','fullscreen', 0)
+      Config.set('graphics','fullscreen', 'fake')
       Config.set('graphics','position', "custom")
       Config.set('graphics','top', 800)
       Config.set('graphics','left', 1700)

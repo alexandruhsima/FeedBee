@@ -8,7 +8,7 @@ class WebRequest(Thread):
     def __init__(self, url = False, data = False):
       Thread.__init__(self)
       self.url = self.api_base if url == "" or url == False else self.api_base + str(url)
-      self.data = data if type(data) != bool else json.dumps({"d":"d"})
+      self.data = data if type(data) != bool else None
     def callback(self, val):
       try:
         jsonResponse = json.loads(val)
